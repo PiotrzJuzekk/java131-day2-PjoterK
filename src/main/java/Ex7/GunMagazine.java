@@ -28,4 +28,24 @@ public class GunMagazine {
             return false;
         }
     }
+
+    public void shot(){
+        if (isLoaded()){
+            System.out.println("pif paf " + magazine.remove(magazine.size() - 1));
+        } else {
+            System.out.println("pusty magazynek");
+        }
+    }
+
+    public void loadedWithBullets(int numbersOfBullets){
+        for (int i = 1; i <= numbersOfBullets; i++){
+            loadBullet("Bullet" + i);
+        }
+    }
+
+    public void shotBullets(int numbersOfBullets){
+        for (int i = 1; i <= numbersOfBullets; i++){
+            shot();
+        }
+    }
 }

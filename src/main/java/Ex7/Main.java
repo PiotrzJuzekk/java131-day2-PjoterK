@@ -7,14 +7,11 @@ public class Main {
 
         checkIfGunLoaded(gun);
 
-        gun.loadBullet("bullet 1");
-        gun.loadBullet("bullet 2");
-        gun.loadBullet("bullet 3");
-        gun.loadBullet("bullet 4");
-        gun.loadBullet("bullet 5");
-        gun.loadBullet("bullet 6");
-        gun.loadBullet("bullet 7");
-        gun.loadBullet("bullet 8");
+        gun.loadedWithBullets(8);
+
+        checkIfGunLoaded(gun);
+
+        gun.shotBullets(9);
 
         checkIfGunLoaded(gun);
     }
@@ -22,4 +19,5 @@ public class Main {
     private static void checkIfGunLoaded(GunMagazine gun) {
         System.out.println("Bron naladowana: " + gun.isLoaded());
     }
+
 }
