@@ -26,6 +26,10 @@ public class Manufacturer {
         this.name = name;
     }
 
+    public Year getYearOfFundation() {
+        return yearOfFundation;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
